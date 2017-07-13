@@ -27,8 +27,8 @@ public class GankApi {
     /**
      * 每次加载条目
      */
-//    public static final int LOAD_LIMIT = 20;
-    public static final int LOAD_LIMIT = 10;
+    public static final int LOAD_LIMIT = 20;
+//    public static final int LOAD_LIMIT = 10;
     /**
      * 加载起始页面
      */

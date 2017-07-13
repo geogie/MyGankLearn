@@ -1,3 +1,3 @@
 # MyGankLearn
 摩拜大神项目KeepGank
-https://github.com/Jerey-Jobs/KeepGank
+[原地址](https://github.com/llxdaxia/CountdownView)
