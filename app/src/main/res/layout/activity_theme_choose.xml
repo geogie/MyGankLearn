@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_background"
+    android:orientation="vertical"
+    skin:enable="true">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_main_color"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="主题设置"
+        app:titleTextColor="@color/normal_background"
+        skin:enable="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/theme_default_layout"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/theme_default_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/theme_defalut"/>
+
+            <RadioButton
+                android:id="@+id/theme_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红色魅力"
+                android:textColor="@color/normal_text_color"
+                skin:enable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/theme_night_layout"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/theme_night_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/theme_dark"/>
+
+            <RadioButton
+                android:id="@+id/theme_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暗黑系列"
+                android:textColor="@color/normal_text_color"
+                skin:enable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/theme_ocean_layout"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/theme_ocean_img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/theme_ocean"
+                />
+
+            <RadioButton
+                android:id="@+id/theme_ocean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色海洋"
+                android:textColor="@color/normal_text_color"
+                skin:enable="true"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RadioButton
+            android:id="@+id/font_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="默认字体"
+            android:textColor="@color/normal_text_color"
+            skin:enable="true"/>
+
+        <RadioButton
+            android:id="@+id/font_wryh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微软雅黑"
+            android:textColor="@color/normal_text_color"
+            skin:enable="true"/>
+    </RadioGroup>
+
+</LinearLayout>

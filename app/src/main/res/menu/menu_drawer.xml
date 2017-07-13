@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin">
+
+    <group
+        android:id="@+id/group_feature"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_grey600_24dp"
+            android:title="@string/action_home"
+            skin:enable="true"/>
+        <item
+            android:id="@+id/nav_today"
+            android:icon="@drawable/ic_today_white_36dp"
+            android:title="@string/action_today"
+            skin:enable="true"/>
+
+        <item
+            android:id="@+id/nav_collection"
+            android:icon="@drawable/meizi_grey_on"
+            android:title="@string/girl"
+            skin:enable="true"/>
+
+        <item
+            android:id="@+id/my_blog"
+            android:icon="@drawable/ic_star_grey600_24dp"
+            android:title="@string/action_blog"
+            skin:enable="true"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_grey600_24dp"
+            android:title="@string/action_theme"
+            skin:enable="true"/>
+
+    </group>
+
+</menu>
+
